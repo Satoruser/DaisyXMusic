@@ -1205,7 +1205,7 @@ async def lol_cb(b, cb):
     if cb.from_user.id != useer_id:
         await cb.answer("You ain't the person who requested to play the song!", show_alert=True)
         return
-    await cb.message.edit("Hang On... Player Starting")
+    await cb.message.edit("Hang On... Player Starting. Note: If VC not started please start...")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
